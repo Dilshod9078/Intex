@@ -1,0 +1,192 @@
+*{
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+.hero__item1{
+    position: relative;
+    transition: all 0.3s linear;
+}
+.hero__item1:hover{
+    color: #009398;
+}
+.hero__item1::before{
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #009398;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s linear;
+}
+.hero__item1:hover::before{
+    width: 100%;
+}
+
+.hero__item2{
+    position: relative;
+    transition: all 0.3s linear;
+}
+.hero__item2:hover{
+    color: #009398;
+}
+.hero__item2::before{
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #009398;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s linear;
+}
+.hero__item2:hover::before{
+    width: 100%;
+}
+
+.hero__item3{
+    position: relative;
+    transition: all 0.3s linear;
+}
+.hero__item3:hover{
+    color: #009398;
+}
+.hero__item3::before{
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #009398;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s linear;
+}
+.hero__item3:hover::before{
+    width: 100%;
+}
+.modal-wrap {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+    display: none;
+}
+.modal {
+    width: 60%;
+    padding: 20px;
+    background-color: lightblue;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+.open-modal{
+    display: block;
+}
+.modal-card{
+    margin-left: 48px;
+}
+.td-btn{
+    margin-right: 10px;
+}
+.modalwrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+    display: none;
+}
+.modal-inner {
+    width: 40%;
+    height: 18%;
+    padding: 20px;
+    background-color: lightblue;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    border-radius: 10px;
+}
+.modal-open{
+    display: block;
+}
+.delete-card {
+    text-align: center;
+}
+.delete-bold {
+    margin-bottom: 20px;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+}
+.delete-card-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.cancel {
+    width: 100px;
+    padding: 10px;
+    border: none;
+    background-color: rgb(62, 101, 209);
+    color: white;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.delete {
+    width: 100px;
+    padding: 10px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.input-list{
+    opacity: 0;
+}
+.open-list{
+    top: 60px;
+    opacity: 1;
+}
+.input-adress{
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
